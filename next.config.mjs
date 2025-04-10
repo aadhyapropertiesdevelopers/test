@@ -11,10 +11,7 @@ const nextConfig = {
       },
     ],
   },
-  devIndicators: false,
-  rules: {
-    "react/no-unescaped-entities": "off"
-  }
+  devIndicators: false
 };
 
 export default nextConfig;
