@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Icon } from '@iconify/react';
 
@@ -37,27 +37,31 @@ const Home = () => {
                         {` We're crafting something exciting. Stay tuned for updates!`}
                     </p>
                 </div>
-
-
             </div>
 
             {/* Footer */}
             <footer className="w-full text-center space-y-3 py-6">
-                <div className="flex justify-center gap-6">
-                    <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                <div className="flex justify-center gap-4">
+                    <Link href="https://www.facebook.com/profile.php?id=61574916703014" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
                         <Icon icon="ic:baseline-facebook" className='w-6 h-6 text-blue-700' />
                     </Link>
-                    <Link href="/" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                    <Link href="http://wa.me/919032952244" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
                         <Icon icon="ic:baseline-whatsapp" className='w-6 h-6 text-green-700' />
                     </Link>
-                    <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                    <Link href="https://www.instagram.com/globalgrandeurevents/" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
                         <Icon icon="mdi:instagram" className='w-6 h-6 text-pink-600' />
                     </Link>
-                    <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                    <Link href="https://x.com/GgEvents25" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
                         <Icon icon="line-md:twitter" className='w-6 h-6 text-blue-500' />
                     </Link>
+                    <Link href="https://www.youtube.com/@GlobalGrandeurEvents" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                        <Icon icon="line-md:youtube" className='w-6 h-6 text-red-500' />
+                    </Link>
+                    <Link href="https://www.tumblr.com/settings/account" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
+                        <Icon icon="typcn:social-tumbler" className='w-6 h-6 text-blue-800' />
+                    </Link>
                     <Link href="mailto:GLOBALGRANDEUREVENTS@GMAIL.COM" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
-                        <Icon icon="weui:email-outlined" className='w-6 h-6 text-red-700' />
+                        <Icon icon="weui:email-outlined" className='w-6 h-6 text-gray-700' />
                     </Link>
                 </div>
 
