@@ -34,7 +34,7 @@ const Home = () => {
                     </h1>
 
                     <p className="text-lg text-muted-foreground max-w-xl ml-10 mt-2">
-                        We're crafting something exciting. Stay tuned for updates!
+                        {` We're crafting something exciting. Stay tuned for updates!`}
                     </p>
                 </div>
 
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
 
             {/* Footer */}
-            <footer className="w-full text-center space-y-3 py-6 border-t">
+            <footer className="w-full text-center space-y-3 py-6">
                 <div className="flex justify-center gap-6">
                     <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className='p-2 transform transition-transform duration-300 hover:scale-[2] rounded-lg'>
                         <Icon icon="ic:baseline-facebook" className='w-6 h-6 text-blue-700' />
