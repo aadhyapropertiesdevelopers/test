@@ -177,7 +177,7 @@ const About = () => {
                             {Array.from({ length: Math.ceil(reviews.length / 2) }).map((_, i) => {
                                 const first = reviews[i * 2]; const second = reviews[i * 2 + 1];
                                 return (
-                                    <div key={i} className="flex flex-col sm:flex-row gap-6 w-fit flex-shrink-0">
+                                    <div key={i} className="flex gap-4">
                                         {[first, second].map(
                                             (review, idx) =>
                                                 review && (

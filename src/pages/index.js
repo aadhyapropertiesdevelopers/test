@@ -56,7 +56,7 @@ const HomeBanner = () => {
     text-black flex flex-col">
 
         <Header />
-        <div className="flex-grow flex justify-start items-center px-6 md:px-12 py-12">
+        <div className="flex-grow flex justify-start items-start md:items-center px-6 md:px-12 py-12">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl uppercase font-bold bg-gradient-to-r from-purple-800 via-pink-700 to-teal-600 text-transparent bg-clip-text">
               {` India's largest KARNIVAL`}
