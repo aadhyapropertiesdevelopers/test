@@ -1,9 +1,6 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
-
 import { Poppins } from "next/font/google";
-import { useRouter } from 'next/router';
+import Header from './Header';
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -12,18 +9,10 @@ const poppins = Poppins({
 });
 
 const Layout = ({ children }) => {
-    const router = useRouter();
-
-    // Define routes that should NOT have Header and Footer
-    const noLayoutRoutes = ['/export-simplified'];
-
-    const hideLayout = noLayoutRoutes.includes(router.pathname);
-
     return (
         <div className="layout">
-            {!hideLayout && <Header />}
+            <Header />
             <main className={`${poppins.variable} font-sans`}>{children}</main>
-            {!hideLayout && <Footer />}
         </div>
     );
 };
