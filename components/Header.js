@@ -132,7 +132,7 @@ const Header = () => {
                                     key={index}
                                     href={item.href}
                                     className={`flex items-center px-6 py-2 rounded-lg group transition-all duration-300
-                                        ${isActive ? 'bg-black/10 text-black-200' : 'hover:bg-black/15 text-gray-600'}
+                                        ${isActive ? 'bg-black/5 text-black-200' : 'hover:bg-black/10 text-gray-600'}
                                     `}
                                 >
                                     <Icon

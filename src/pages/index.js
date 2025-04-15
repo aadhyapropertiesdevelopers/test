@@ -136,6 +136,7 @@ import AnimationButton from '../../components/Animation/AnimationButton';
 import Header from '../../components/Header';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { Icon } from '@iconify/react';
 
 const HomeBanner = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -207,7 +208,7 @@ const HomeBanner = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <p>{`Vijayawada's ultimate family entertainment extravaganza!`}</p>
+              <p>{`Vijayawada's ultimate family entertainment Games/Music/Food`}</p>
             </motion.div>
 
             <motion.div
@@ -216,8 +217,8 @@ const HomeBanner = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
             >
-              <p className="text-3xl italic text-blue-800 uppercase font-semibold">Summer Vibes</p>
-              <p className="text-3xl text-red-800 uppercase font-semibold ">
+              <p className="text-3xl text-fuchsia-800 uppercase font-bold">Kids Funland Fair</p>
+              <p className="text-2xl text-slate-600 uppercase font-semibold ">
                 May 31<sup className="text-sm align-super">st</sup> - 1<sup className="text-sm align-super">st</sup> June,
                 <span className="text-4xl font-bold"> 2025</span>
               </p>
@@ -233,11 +234,19 @@ const HomeBanner = () => {
                 <div>
                   <p className="font-bold uppercase">a Convention Centre a/c</p>
                   <p onClick={openGoogleMaps} className='cursor-pointer'>40-5-6A,MG Road, Vijayawada, Andhra Pradesh 520010</p>
-                  <div className='flex gap-3 mt-2 font-bold items-center text-red-600'>
-                    <Link href="https://wa.me/919701352244" target="_blank" rel="noopener noreferre">+91 9701352244</Link>
-                    <Link href="https://wa.me/919032952244" target="_blank" rel="noopener noreferre">+91 9032952244</Link>
+                  <div className='flex gap-3 mt-2 font-bold items-center text-green-600'>
+                    <Link href="https://wa.me/919701352244" target="_blank" rel="noopener noreferre" className='flex gap-2 items-center'>
+                      <Icon icon='ic:baseline-whatsapp' className="text-xl text-green-700" />
+                      +91 9701352244
+                    </Link>
+                    <Link href="https://wa.me/919032952244" target="_blank" rel="noopener noreferre" className='flex gap-2 items-center'>
+                      <Icon icon='ic:baseline-whatsapp' className="text-xl text-green-700" />
+                      +91 9032952244
+                    </Link>
                   </div>
-                  <p className='text-red-600 font-bold'>globalgrandeurevents@gmail.com</p>
+                  <Link href='mailto:globalgrandeurevents@gmail.com'
+                    target="_blank"
+                    rel="noopener noreferrer" className='text-red-600 font-bold'>globalgrandeurevents@gmail.com</Link>
                 </div>
                 <div onClick={openGoogleMaps} className='bg-white cursor-pointer rounded-md p-2 shadow-md'>
                   <MapPin className="h-6 w-6" />

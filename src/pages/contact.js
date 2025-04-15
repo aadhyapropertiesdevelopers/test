@@ -247,12 +247,58 @@ const Contact = () => {
                     </motion.div>
 
                     {/* Google Map */}
-                    <motion.div
-                        variants={fadeUp}
+                    <div
                         custom={4}
-                        className="rounded-xl overflow-hidden border border-cyan-200 shadow-lg h-full"
+                        className="rounded-xl overflow-hidden bg-white/10 border border-cyan-200 shadow-lg h-full"
                     >
-                        <iframe
+                        <div className='max-h-96 overflow-y-auto p-4'>
+                            <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>Why Vijayawada?</h1>
+                            <p className='mb-2'>
+                                Vijayawada is known for its rich culture,
+                                historical significance, and thriving community
+                                spirit. Hosting the Kid's Funland Fair in this
+                                vibrant city allows us to bring joy and fun to
+                                thousands of families.
+                            </p>
+                            <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>Why kids Funfair</h1>
+                            <p className='mb-2'>
+                                Kids Funland Fair - The Ultimate Summer Fun!
+                                Step into a world of excitement at Kids Funland Fair - the mustvisit event of the season! Packed with thrilling games, fun rides,
+                                creative activities, and delicious food, it's the perfect place for kids
+                                to laugh, play, and explore.
+                            </p>
+                            <p className=''>From bouncy castles and face painting to yummy treats and cool
+                                prizes, every corner is bursting with joy. Safe, vibrant, and full of
+                                surprises - it's a summer adventure your kids will never forget!
+                                Don't miss out - Funland is where the magic happens!
+                            </p>
+
+                            <section class="max-w-4xl mx-auto px-4 py-8">
+                                <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>STALL PRICING & LAYOUT</h1>
+                                <div class="grid md:grid-cols-3 gap-6">
+                                    <div class="bg-green-100 rounded-2xl p-2 shadow text-center">
+                                        <h3 class="text-xl font-semibold mb-2">Small Stall</h3>
+                                        <p class="text-gray-700 text-lg">4 Sq. Mtrs</p>
+                                        <p class="text-black font-bold text-xl mt-2">₹18,000 <span class="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+
+                                    <div class="bg-yellow-100 rounded-2xl p-2 shadow text-center">
+                                        <h3 class="text-xl font-semibold mb-2">Medium Stall</h3>
+                                        <p class="text-gray-700 text-lg">6 Sq. Mtrs</p>
+                                        <p class="text-black font-bold text-xl mt-2">₹28,000 <span class="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+
+                                    <div class="bg-blue-100 rounded-2xl p-2 shadow text-center">
+                                        <h3 class="text-xl font-semibold mb-2">Big Stall</h3>
+                                        <p class="text-gray-700 text-lg">9 Sq. Mtrs</p>
+                                        <p class="text-black font-bold text-xl mt-2">₹32,000 <span class="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </div>
+                        {/* <iframe
                             title="Google Map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.085888!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8!2s123+Fantasy+Lane+Dream+City!5e0!3m2!1sen!2s!4v0000000000"
                             width="100%"
@@ -261,8 +307,8 @@ const Contact = () => {
                             allowFullScreen=""
                             loading="lazy"
                             style={{ border: 0 }}
-                        ></iframe>
-                    </motion.div>
+                        ></iframe> */}
+                    </div>
                 </div>
 
                 {/* Social Icons - Below Contact Cards */}
