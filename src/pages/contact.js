@@ -204,7 +204,7 @@ const Contact = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="w-full max-w-7xl grid grid-cols-1 gap-8"
+                className="w-full max-w-7xl grid grid-cols-1 gap-8 mt-10 md:mt-2"
             >
                 {/* Header */}
                 <motion.div variants={fadeUp} className="text-center">
@@ -212,7 +212,7 @@ const Contact = () => {
                         Contact Us
                     </h1>
                     <p className="text-lg text-black">
-                        We're happy to connect! Reach out through any channel below.
+                        {`We're happy to connect! Reach out through any channel below.`}
                     </p>
                 </motion.div>
 
@@ -254,23 +254,23 @@ const Contact = () => {
                         <div className='max-h-96 overflow-y-auto p-4'>
                             <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>Why Vijayawada?</h1>
                             <p className='mb-2'>
-                                Vijayawada is known for its rich culture,
+                                {`Vijayawada is known for its rich culture,
                                 historical significance, and thriving community
                                 spirit. Hosting the Kid's Funland Fair in this
                                 vibrant city allows us to bring joy and fun to
-                                thousands of families.
+                                thousands of families.`}
                             </p>
                             <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>Why kids Funfair</h1>
                             <p className='mb-2'>
-                                Kids Funland Fair - The Ultimate Summer Fun!
+                                {`Kids Funland Fair - The Ultimate Summer Fun!
                                 Step into a world of excitement at Kids Funland Fair - the mustvisit event of the season! Packed with thrilling games, fun rides,
                                 creative activities, and delicious food, it's the perfect place for kids
-                                to laugh, play, and explore.
+                                to laugh, play, and explore.`}
                             </p>
-                            <p className=''>From bouncy castles and face painting to yummy treats and cool
+                            <p className=''>{`From bouncy castles and face painting to yummy treats and cool
                                 prizes, every corner is bursting with joy. Safe, vibrant, and full of
                                 surprises - it's a summer adventure your kids will never forget!
-                                Don't miss out - Funland is where the magic happens!
+                                Don't miss out - Funland is where the magic happens!`}
                             </p>
 
                             <section class="max-w-4xl mx-auto px-4 py-8">
@@ -295,8 +295,6 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </section>
-
-
                         </div>
                         {/* <iframe
                             title="Google Map"

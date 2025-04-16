@@ -1,10 +1,15 @@
-import React from 'react';
-import {
-    FerrisWheel, Clapperboard, Utensils, ShoppingBag, BookOpenText,
-    Baby, Star, ChevronRight, Sparkles
-} from 'lucide-react';
 import { Marquee } from '@/components/magicui/marquee';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import {
+    Baby,
+    BookOpenText,
+    Clapperboard,
+    FerrisWheel,
+    ShoppingBag,
+    Sparkles,
+    Star,
+    Utensils
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -241,7 +246,7 @@ const About = () => {
                 <TabsContent value="partners">
                     <div className="bg-white/20 p-6 rounded-2xl border border-gray-200">
                         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Valued Partners</h2>
-                        <div className="flex flex-wrap justify-center items-center gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                             {partners.map((partner, index) => (
                                 <Link
                                     key={index}
@@ -250,7 +255,7 @@ const About = () => {
                                     rel="noopener noreferrer"
                                     className="group flex flex-col items-center"
                                 >
-                                    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-52 h-20 flex items-center justify-center border">
+                                    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-20 flex items-center justify-center border">
                                         <Image
                                             src={partner.logo}
                                             alt={partner.name}
@@ -265,13 +270,9 @@ const About = () => {
                                 </Link>
                             ))}
                         </div>
-                        {/* <div className="mt-6 text-center">
-                            <button className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-pink-400 to-indigo-400 text-white font-medium rounded-full hover:shadow-md text-sm">
-                                Become a Partner <ChevronRight className="ml-2 w-3 h-3" />
-                            </button>
-                        </div> */}
                     </div>
                 </TabsContent>
+
             </Tabs>
         </div>
     );
