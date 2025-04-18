@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const AnimationButton = ({ buttonText }) => {
     const handleClick = () => {
-        const end = Date.now() + 3 * 1000; // 3 seconds
+        const end = Date.now() + 3 * 1000; // 3 seconds for confetti
         const colors = ["#b8860b", "#006400", "#0a0a0a", "#8b008b", "#0000"];
-
 
         const frame = () => {
             if (Date.now() > end) return;
@@ -32,12 +31,18 @@ const AnimationButton = ({ buttonText }) => {
         };
 
         frame();
+
+        // ⏳ Wait 5 seconds, then open the URL in a new tab
+        setTimeout(() => {
+            window.open("https://www.jotform.com/build/251065072068453?s=templates", "_blank");
+        }, 3000);
     };
+
     return (
         <div className="relative">
             <Button onClick={handleClick}>{buttonText}</Button>
         </div>
-    )
-}
+    );
+};
 
-export default AnimationButton
+export default AnimationButton;

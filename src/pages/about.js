@@ -16,15 +16,15 @@ import Link from 'next/link';
 const About = () => {
     const teamMembers = [
         { name: "T Aruna Kumari", role: "CEO", img: "/images/01.png" },
-        { name: "Vivek Kumar", role: "Director", img: "/images/02.png" },
-        { name: "Shivani Raj", role: "COO", img: "/images/03.png" },
-        { name: " Uday Kumar Y", role: "Head Marcom", img: "/images/04.png" },
-        { name: "Tanishka Raj", role: "Executive Director", img: "/images/05.png" },
+        { name: "Shivani Raj", role: "COO", img: "/images/02.png" },
+        { name: "Tanishka Raj", role: "Executive Director", img: "/images/03.png" },
+        { name: "Vivek Kumar", role: "Director", img: "/images/04.png" },
+        { name: " Uday Kumar Y", role: "Head Marcom", img: "/images/05.png" },
     ];
     const highlights = [
         {
             icon: <FerrisWheel className="w-6 h-6 text-white" />,
-            text: "100+ Rides",
+            text: "50+ Rides",
             color: "bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white"
         },
         {
@@ -57,7 +57,7 @@ const About = () => {
     const partners = [
         { name: "Kids World", logo: "/images/Partner-01.jpg", url: "#" },
         { name: "Convention Center", logo: "/images/Partner-02.jpg", url: "#" },
-        { name: "Adventure Gear", logo: "/partner3.png", url: "#" },
+        { name: "BirthRight", logo: "/images/Partner-03.jpg", url: "#" },
         { name: "KidSafe", logo: "/partner4.png", url: "#" },
     ];
     const reviews = [
@@ -107,7 +107,7 @@ const About = () => {
                     <span className="text-sm font-medium text-pink-600">Fun for the whole family</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500">Kids Funland Fair</span>
+                    Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500 uppercase">global grandeur events</span>
                 </h1>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                     Where magical moments and unforgettable memories are created for families of all ages
@@ -186,15 +186,15 @@ const About = () => {
                                     key={idx}
                                     className=" rounded-xl overflow-hidden shadow-sm hover:shadow-md border w-64 mx-2"
                                 >
-                                    <div className="relative h-72 hover:text-white">
+                                    <div className="relative h-72 text-white hover:text-gray-400">
                                         {/* Gradient overlay and text */}
-                                        <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-white/50 hover:to-purple-400"></div>
+                                        {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-white/50 hover:to-purple-400"></div> */}
 
                                         {/* Image */}
                                         <Image src={member.img} alt={member.name} width={200} height={200} className="w-full h-full  object-cover" />
 
                                         {/* Text on image */}
-                                        <div className="absolute bottom-4 left-0 right-0 z-20 text-center px-4">
+                                        <div className="absolute bottom-0 left-0 right-0 z-20 text-center px-4 bg-black/60 p-2 m-2 rounded-lg">
                                             <h3 className="text-lg font-semibold uppercase">{member.name}</h3>
                                             <p className="text-sm font-semibold">{member.role}</p>
                                         </div>
@@ -255,7 +255,7 @@ const About = () => {
                                     rel="noopener noreferrer"
                                     className="group flex flex-col items-center"
                                 >
-                                    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-20 flex items-center justify-center border">
+                                    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-32 flex items-center justify-center border">
                                         <Image
                                             src={partner.logo}
                                             alt={partner.name}

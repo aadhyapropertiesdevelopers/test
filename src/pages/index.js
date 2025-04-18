@@ -199,7 +199,7 @@ const HomeBanner = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              {` India's largest KARNIVAL`}
+              Kids Funland Fair
             </motion.h1>
 
             <motion.div
@@ -217,7 +217,7 @@ const HomeBanner = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
             >
-              <p className="text-3xl text-fuchsia-800 uppercase font-bold">Kids Funland Fair</p>
+              <p className="text-3xl text-fuchsia-800 uppercase font-bold">  {` India's largest KARNIVAL`}</p>
               <p className="text-2xl text-slate-600 uppercase font-semibold ">
                 May 31<sup className="text-sm align-super">st</sup> - 1<sup className="text-sm align-super">st</sup> June,
                 <span className="text-4xl font-bold"> 2025</span>
@@ -284,7 +284,6 @@ const HomeBanner = () => {
 
             <div className='flex gap-4 items-center'>
               <AnimationButton buttonText={"Register"} />
-              <AnimationButton buttonText={"Booking Tickets"} />
             </div>
           </div>
         </motion.div>
