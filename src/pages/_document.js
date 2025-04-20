@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Kids Funland Fair</title>
         <meta
           name="description"
           content="Vijayawada's ultimate family entertainment – enjoy thrilling games, live music, and delicious food at Kids Funland Fair!"
