@@ -158,13 +158,14 @@ const fadeUp = {
 const socialLinks = [
     { name: 'Facebook', href: 'https://facebook.com', icon: 'ic:baseline-facebook', bg: 'bg-[#1877F2]', hover: 'hover:bg-[#166FE5]' },
     { name: 'Twitter', href: 'https://twitter.com', icon: 'mdi:twitter', bg: 'bg-[#1DA1F2]', hover: 'hover:bg-[#1991D2]' },
-    { name: 'Instagram', href: 'https://instagram.com', icon: 'mdi:instagram', bg: 'bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600', hover: 'hover:opacity-80' },
+    { name: 'Instagram', href: 'https://www.instagram.com/kidsfunlandfair?igsh=MXRyM3VobXBiNGN0Yw==', icon: 'mdi:instagram', bg: 'bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600', hover: 'hover:opacity-80' },
     { name: 'WhatsApp', href: 'https://wa.me/919032952244', icon: 'ic:baseline-whatsapp', bg: 'bg-green-600', hover: 'hover:bg-gray-700' },
-    { name: 'Email', href: 'mailto:info@kidsfunfair.com', icon: 'ic:baseline-email', bg: 'bg-red-500', hover: 'hover:bg-red-600' },
+    { name: 'YouTube', href: 'https://youtube.com/@globalgrandeurevents?si=Oux8jDmaxz_fAybP', icon: 'line-md:youtube', bg: 'bg-red-600', hover: 'hover:bg-red-700' },
+    { name: 'Email', href: 'mailto:globalgrandeurevents@gmail.com', icon: 'ic:baseline-email', bg: 'bg-red-500', hover: 'hover:bg-red-600' },
     { name: 'Phone', href: 'tel:+919032952244', icon: 'ic:baseline-phone', bg: 'bg-blue-500', hover: 'hover:bg-blue-600' },
     {
         name: 'Address',
-        href: 'https://www.google.com/maps?q=YOUR_LATITUDE,YOUR_LONGITUDE',
+        href: 'https://g.co/kgs/5nH75ib',
         icon: 'mdi:map-marker',
         bg: 'bg-gray-800',
         hover: 'hover:bg-gray-900'
@@ -210,6 +211,30 @@ const Contact = () => {
                     {/* Right Column - Content */}
                     <div className="rounded-xl overflow-hidden bg-white/10 border border-cyan-200 shadow-lg max-h-96">
                         <div className='h-full overflow-y-auto p-4'>
+                            {/* Pricing Section with Registration Button */}
+                            <section className="max-w-4xl mx-auto pb-4">
+                                <h1 className='text-xl uppercase mb-4 text-purple-900 font-bold'>STALL PRICING & LAYOUT</h1>
+                                <div className="grid md:grid-cols-3 gap-4">
+                                    <div className="bg-green-100 rounded-2xl p-4 shadow text-center">
+                                        <h3 className="text-xl font-semibold mb-2">Small Stall</h3>
+                                        <p className="text-gray-700 text-lg">4 Sq. Mtrs</p>
+                                        <p className="text-black font-bold text-xl mt-2">₹18,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+
+                                    <div className="bg-yellow-100 rounded-2xl p-4 shadow text-center">
+                                        <h3 className="text-xl font-semibold mb-2">Medium Stall</h3>
+                                        <p className="text-gray-700 text-lg">6 Sq. Mtrs</p>
+                                        <p className="text-black font-bold text-xl mt-2">₹28,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+
+                                    <div className="bg-blue-100 rounded-2xl p-4 shadow text-center">
+                                        <h3 className="text-xl font-semibold mb-2">Big Stall</h3>
+                                        <p className="text-gray-700 text-lg">9 Sq. Mtrs</p>
+                                        <p className="text-black font-bold text-xl mt-2">₹32,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
+                                    </div>
+                                </div>
+                            </section>
+
                             <h1 className='text-xl uppercase mb-2 text-purple-900 font-bold'>Why Vijayawada?</h1>
                             <p className='mb-2'>
                                 {`Vijayawada is known for its rich culture,
@@ -233,49 +258,6 @@ const Contact = () => {
                                 surprises - it's a summer adventure your kids will never forget!
                                 Don't miss out - Funland is where the magic happens!`}
                             </p>
-
-                            {/* Pricing Section with Registration Button */}
-                            <section className="max-w-4xl mx-auto px-4 py-4">
-                                <h1 className='text-xl uppercase mb-4 text-purple-900 font-bold'>STALL PRICING & LAYOUT</h1>
-                                <div className="grid md:grid-cols-3 gap-4">
-                                    <div className="bg-green-100 rounded-2xl p-4 shadow text-center">
-                                        <h3 className="text-xl font-semibold mb-2">Small Stall</h3>
-                                        <p className="text-gray-700 text-lg">4 Sq. Mtrs</p>
-                                        <p className="text-black font-bold text-xl mt-2">₹18,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
-                                    </div>
-
-                                    <div className="bg-yellow-100 rounded-2xl p-4 shadow text-center">
-                                        <h3 className="text-xl font-semibold mb-2">Medium Stall</h3>
-                                        <p className="text-gray-700 text-lg">6 Sq. Mtrs</p>
-                                        <p className="text-black font-bold text-xl mt-2">₹28,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
-                                    </div>
-
-                                    <div className="bg-blue-100 rounded-2xl p-4 shadow text-center">
-                                        <h3 className="text-xl font-semibold mb-2">Big Stall</h3>
-                                        <p className="text-gray-700 text-lg">9 Sq. Mtrs</p>
-                                        <p className="text-black font-bold text-xl mt-2">₹32,000 <span className="text-sm font-medium text-gray-500">+ GST</span></p>
-                                    </div>
-                                </div>
-
-                                {/* Registration Button */}
-                                <motion.div
-                                    className="mt-8 text-center"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 0.5 }}
-                                >
-                                    <motion.a
-                                        href="#register"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="inline-block bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                                    >
-                                        Register Your Stall Now
-                                    </motion.a>
-                                </motion.div>
-                            </section>
                         </div>
                     </div>
                 </div>
