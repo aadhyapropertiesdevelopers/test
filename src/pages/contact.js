@@ -194,20 +194,20 @@ const Contact = () => {
                 >
                     <h2 className='text-xl md:text-2xl uppercase mb-3 text-purple-900 font-bold'>Why Vijayawada?</h2>
                     <p className='mb-6 text-gray-700 text-sm'>
-                        Vijayawada is known for its rich culture, historical significance, and thriving community spirit.
-                        Hosting the Kid's Funland Fair in this vibrant city allows us to bring joy and fun to thousands of families.
+                        {` Vijayawada is known for its rich culture, historical significance, and thriving community spirit.
+                        Hosting the Kid's Funland Fair in this vibrant city allows us to bring joy and fun to thousands of families.`}
                     </p>
 
                     <h2 className='text-xl md:text-2xl uppercase mb-3 text-purple-900 font-bold'>Why Kids Funfair</h2>
                     <p className='mb-3 text-gray-700 text-sm'>
-                        Kids Funland Fair - The Ultimate Summer Fun! Step into a world of excitement at Kids Funland Fair -
+                        {` Kids Funland Fair - The Ultimate Summer Fun! Step into a world of excitement at Kids Funland Fair -
                         the must-visit event of the season! Packed with thrilling games, fun rides, creative activities,
-                        and delicious food, it's the perfect place for kids to laugh, play, and explore.
+                        and delicious food, it's the perfect place for kids to laugh, play, and explore.`}
                     </p>
                     <p className='text-gray-700 text-sm'>
-                        From bouncy castles and face painting to yummy treats and cool prizes, every corner is bursting with joy.
+                        {` From bouncy castles and face painting to yummy treats and cool prizes, every corner is bursting with joy.
                         Safe, vibrant, and full of surprises - it's a summer adventure your kids will never forget!
-                        Don't miss out - Funland is where the magic happens!
+                        Don't miss out - Funland is where the magic happens!`}
                     </p>
                 </motion.div>
 
@@ -236,7 +236,7 @@ const Contact = () => {
                                 Kids Funland Fair
                             </h1>
                             <p className="text-gray-700 text-sm mb-3">
-                                A world of excitement! Fun rides, creative games, treats, and laughter await in Vijayawada’s favorite summer event!
+                                {` A world of excitement! Fun rides, creative games, treats, and laughter await in Vijayawada’s favorite summer event!`}
                             </p>
 
                             <div className="grid grid-cols-3 gap-2 text-center text-xs font-semibold">

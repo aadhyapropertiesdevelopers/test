@@ -319,7 +319,7 @@ const HomeBanner = () => {
                 <Image src="/images/Fuland.png" width={400} height={400} alt="Logo" className="w-96 h-auto drop-shadow-lg" />
               </div>
               <div className='text-center'>
-                <p className="text-2xl uppercase font-bold bg-gradient-to-r from-pink-600 via-yellow-400 to-teal-500 text-transparent bg-clip-text">Vijayawada's ultimate family <br /> entertainment</p>
+                <p className="text-2xl uppercase font-bold bg-gradient-to-r from-pink-600 via-yellow-400 to-teal-500 text-transparent bg-clip-text">{`Vijayawada's ultimate family`} <br /> entertainment</p>
                 <p className="text-2xl text-slate-600 uppercase font-semibold">
                   May 31<sup className="text-sm align-super">st</sup> - June 1<sup className="text-sm align-super">st</sup>,
                   <span className="text-4xl font-bold ml-2">2025</span>
@@ -331,8 +331,6 @@ const HomeBanner = () => {
                 </Link>
               </div>
             </motion.div>
-
-
           </div>
         </motion.div>
       </div>

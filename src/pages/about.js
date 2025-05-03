@@ -374,7 +374,7 @@ const About = () => {
                         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Valued Partners</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                             {partners.map((partner, index) => (
-                                <Link href={partner.url} passHref target='_blank'>
+                                <Link key={index} href={partner.url} passHref target='_blank'>
                                     <div className="group flex flex-col items-center">
                                         <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-32 flex items-center justify-center border">
                                             <Image
