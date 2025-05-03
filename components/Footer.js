@@ -10,11 +10,6 @@ const Footer = () => {
             {/* Left Side - Copyright */}
             <p className="text-xs md:text-sm">© {new Date().getFullYear()} Kids Funland Fair. All rights reserved.</p>
 
-            {/* Center - Privacy Policy */}
-            <Link href="/images/privacy-policy.pdf" className="hover:underline text-white text-xs md:text-sm">
-                Privacy Policy
-            </Link>
-
             {/* Right Side - Social Icons */}
             <div className="flex gap-4">
                 <Link href="https://wa.me/919032952244" target="_blank" rel="noopener noreferrer">
@@ -26,7 +21,15 @@ const Footer = () => {
                 <Link href="https://www.facebook.com/profile.php?id=61575017804597" target="_blank" rel="noopener noreferrer">
                     <Icon icon="ic:baseline-facebook" className="text-white hover:text-blue-400 text-xl md:text-2xl transition" />
                 </Link>
+                <Link href="https://www.youtube.com/@globalgrandeurevents" target="_blank" rel="noopener noreferrer">
+                    <Icon icon="line-md:youtube" className="text-white hover:text-red-600 text-xl md:text-2xl transition" />
+                </Link>
             </div>
+
+            {/* Center - Privacy Policy */}
+            <Link href="/images/privacy-policy.pdf" className="hover:underline text-white text-xs md:text-sm">
+                Privacy Policy
+            </Link>
         </footer>
     );
 };

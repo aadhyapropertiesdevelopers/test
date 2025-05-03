@@ -1,146 +1,3 @@
-// import React from 'react';
-// import { Icon } from '@iconify/react';
-// import { motion } from 'framer-motion';
-
-// const balloons = Array.from({ length: 15 }).map((_, i) => ({
-//     id: i,
-//     left: `${Math.random() * 90}%`,
-//     delay: Math.random() * 3,
-// }));
-
-// const eventsDay1 = [
-//     {
-//         title: 'Drawing Competition',
-//         icon: 'mdi:pencil',
-//         time: '10:00 AM – 1:00 PM',
-//         ageGroups: ['4–6 yrs', '7–10 yrs', '11–14 yrs'],
-//     },
-//     {
-//         title: 'Singing Competition',
-//         icon: 'mdi:microphone-variant',
-//         time: '11:00 AM – 1:00 PM',
-//         ageGroups: ['All age groups'],
-//     },
-//     {
-//         title: 'Magic Show',
-//         icon: 'mdi:magic',
-//         time: '2:00 PM – 3:00 PM',
-//     },
-//     {
-//         title: 'Puppet Show',
-//         icon: 'mdi:drama-masks',
-//         time: '3:00 PM – 4:00 PM',
-//     },
-//     {
-//         title: 'Dance Competition',
-//         icon: 'mdi:human-female-dance',
-//         time: '4:00 PM – 8:00 PM',
-//         ageGroups: ['5–7 yrs', '8–11 yrs', '12–14 yrs'],
-//     },
-// ];
-
-// const eventsDay2 = [
-//     {
-//         title: 'Puppet Show',
-//         icon: 'mdi:drama-masks',
-//         time: '10:30 AM',
-//     },
-//     {
-//         title: 'Robotics',
-//         icon: 'mdi:robot',
-//         time: '11:30 AM',
-//     },
-//     {
-//         title: 'Magic Show',
-//         icon: 'mdi:magic',
-//         time: '12:30 PM',
-//     },
-//     {
-//         title: 'SLZ Programs',
-//         icon: 'mdi:account-group',
-//         time: '1:30 PM',
-//     },
-//     {
-//         title: 'Games',
-//         icon: 'mdi:gamepad-variant',
-//         time: '2:30 PM',
-//     },
-//     {
-//         title: 'Fashion Show',
-//         icon: 'mdi:tshirt-crew',
-//         time: '4:00 PM – 8:00 PM',
-//     },
-//     {
-//         title: 'Prize Distribution',
-//         icon: 'mdi:trophy-award',
-//         time: 'After Fashion Show',
-//     },
-// ];
-
-// const ProgramSchedule = () => {
-//     return (
-//         <div className="relative h-screen overflow-hidden bg-gradient-to-br from-yellow-200 via-pink-100 to-blue-200 p-6 font-sans">
-//             {/* Balloons Animation */}
-//             {balloons.map((b) => (
-//                 <motion.div
-//                     key={b.id}
-//                     className="absolute bottom-0 w-6 h-8 rounded-full bg-pink-400 opacity-70"
-//                     style={{ left: b.left }}
-//                     initial={{ y: 0, scale: 1 }}
-//                     animate={{ y: -800, scale: [1, 1.2, 1] }}
-//                     transition={{ duration: 8, delay: b.delay, repeat: Infinity, ease: 'easeInOut' }}
-//                 />
-//             ))}
-
-//             {/* Schedule Grid */}
-//             <div className="flex h-full w-full items-center justify-between gap-6">
-//                 {/* Day 1 */}
-//                 <div className="flex-1 bg-white rounded-3xl p-6 shadow-xl border-4 border-yellow-400">
-//                     <h2 className="text-4xl text-center font-extrabold text-pink-700 mb-4">🎨 May 31st – Day 1</h2>
-//                     <ul className="space-y-4">
-//                         {eventsDay1.map((event, index) => (
-//                             <li key={index} className="bg-yellow-100 p-4 rounded-xl shadow-md">
-//                                 <div className="flex items-center gap-3">
-//                                     <Icon icon={event.icon} className="text-3xl text-purple-700" />
-//                                     <div>
-//                                         <h3 className="text-lg font-bold text-blue-800">{event.title}</h3>
-//                                         <p className="text-sm text-gray-700">{event.time}</p>
-//                                         {event.ageGroups && (
-//                                             <p className="text-xs text-gray-600">Age Groups: {event.ageGroups.join(', ')}</p>
-//                                         )}
-//                                     </div>
-//                                 </div>
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 </div>
-
-//                 {/* Day 2 */}
-//                 <div className="flex-1 bg-white rounded-3xl p-6 shadow-xl border-4 border-pink-400">
-//                     <h2 className="text-4xl text-center font-extrabold text-purple-700 mb-4">🎉 June 1st – Day 2</h2>
-//                     <ul className="space-y-4">
-//                         {eventsDay2.map((event, index) => (
-//                             <li key={index} className="bg-pink-100 p-4 rounded-xl shadow-md">
-//                                 <div className="flex items-center gap-3">
-//                                     <Icon icon={event.icon} className="text-3xl text-yellow-700" />
-//                                     <div>
-//                                         <h3 className="text-lg font-bold text-blue-800">{event.title}</h3>
-//                                         <p className="text-sm text-gray-700">{event.time}</p>
-//                                     </div>
-//                                 </div>
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 </div>
-//             </div>
-
-//             {/* Floating Panda Mascot */}
-//             <div className="absolute bottom-4 right-4 w-28 h-28 bg-[url('/images/panda.png')] bg-contain bg-no-repeat bg-center animate-bounce" />
-//         </div>
-//     );
-// };
-
-// export default ProgramSchedule;
 import React, { useState } from 'react';
 import { Calendar, ChevronLeft, ChevronRight, Music, PenTool, Wand2, Theater, Users, Gamepad, ShoppingBag, Award } from 'lucide-react';
 
@@ -285,21 +142,35 @@ const KidsFunFestivalSchedule = () => {
             ))}
 
             {/* Main content container */}
-            <div className="w-full mx-auto relative z-10 flex flex-col  px-2">
-                {/* Header */}
+            <div className=" w-full mx-auto relative z-10 flex flex-col  px-2">
+
+                <div className='absolute right-0'>
+                    <div className="w-36 h-36 bg-red-500 rounded-full shadow-xl border-2 border-dashed text-white border-white flex flex-col justify-center items-center text-center p-4">
+                        <h3 className="font-bold">Entry Pass</h3>
+                        <p className='font-bold text-4xl'>299</p>
+                        <h3 className='font-bold'>Kids</h3>
+                    </div>
+                </div>
+
+                <div className='absolute left-0'>
+                    <div className="w-36 h-36 bg-red-500 rounded-full shadow-xl border-2 border-dashed text-white border-white flex flex-col justify-center items-center text-center p-4">
+                        <h3 className="font-bold text-xl">application</h3>
+                        {/* <p className='font-bold text-4xl'>299</p>
+                        <h3 className='font-bold'>Kids</h3> */}
+                    </div>
+                </div>
+
                 <div className="text-center mb-4">
-                    <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg mb-1">
+                    <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-1">
                         <span className="text-yellow-300">★</span>
-                        <span className="text-pink-600">Fun</span>
-                        <span className="text-blue-600">Festival</span>
-                        <span className="text-green-600">2025</span>
+                        <span className="text-pink-600">Kids Funland Fair</span>
                         <span className="text-yellow-300">★</span>
                     </h1>
                     <p className="text-lg text-black font-semibold drop-shadow">May 31st - June 1st</p>
                 </div>
 
                 {/* Day selector */}
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center mb-2">
                     <div className="bg-white p-1 rounded-full shadow-lg flex gap-2">
                         {animals.map((animal) => (
                             <button

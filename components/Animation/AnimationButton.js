@@ -40,7 +40,7 @@ const AnimationButton = ({ buttonText }) => {
 
     return (
         <div className="relative">
-            <Button onClick={handleClick}>{buttonText}</Button>
+            <Button className="w-40" onClick={handleClick}>{buttonText}</Button>
         </div>
     );
 };

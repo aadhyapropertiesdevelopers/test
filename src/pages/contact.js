@@ -158,6 +158,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -184,31 +185,78 @@ const Contact = () => {
     return (
         <div className="bg-[url('/images/3d.png')] py-24 md:py-2 min-h-screen flex justify-center items-center  bg-cover bg-center bg-blend-overlay bg-white/20 px-6">
             <div>
-                {/* Full Width Why Section */}
                 <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
                     variants={fadeUp}
-                    className="w-full max-w-6xl mx-auto bg-white/40 p-6 rounded-3xl mb-4"
+                    className="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-6xl mx-auto p-4 rounded-2xl bg-white/25 items-start"
                 >
-                    <h2 className='text-xl md:text-2xl uppercase mb-3 text-purple-900 font-bold'>Why Vijayawada?</h2>
-                    <p className='mb-6 text-gray-700 text-sm'>
-                        {` Vijayawada is known for its rich culture, historical significance, and thriving community spirit.
-                        Hosting the Kid's Funland Fair in this vibrant city allows us to bring joy and fun to thousands of families.`}
-                    </p>
+                    {/* Left Column – 6 cols */}
+                    <div className="lg:col-span-6 space-y-4">
+                        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-2">
+                            Kids Funland Fair
+                        </h1>
+                        <p className="text-gray-700 text-sm mb-3">
+                            A world of excitement! Fun rides, creative games, treats, and laughter await in Vijayawada’s favorite summer event!
+                        </p>
 
-                    <h2 className='text-xl md:text-2xl uppercase mb-3 text-purple-900 font-bold'>Why Kids Funfair</h2>
-                    <p className='mb-3 text-gray-700 text-sm'>
-                        {` Kids Funland Fair - The Ultimate Summer Fun! Step into a world of excitement at Kids Funland Fair -
-                        the must-visit event of the season! Packed with thrilling games, fun rides, creative activities,
-                        and delicious food, it's the perfect place for kids to laugh, play, and explore.`}
-                    </p>
-                    <p className='text-gray-700 text-sm'>
-                        {` From bouncy castles and face painting to yummy treats and cool prizes, every corner is bursting with joy.
-                        Safe, vibrant, and full of surprises - it's a summer adventure your kids will never forget!
-                        Don't miss out - Funland is where the magic happens!`}
-                    </p>
+                        <div className="grid grid-cols-3 gap-2 text-center text-xs font-semibold">
+                            <div className="bg-green-100 p-3 rounded-lg">Small<br />₹18K + GST</div>
+                            <div className="bg-yellow-100 p-3 rounded-lg">Medium<br />₹28K + GST</div>
+                            <div className="bg-blue-100 p-3 rounded-lg">Big<br />₹32K + GST</div>
+                        </div>
+
+                        <div className="mt-4 space-y-2">
+                            <p className="text-sm text-gray-800">
+                                Want to book a stall? Download the form, fill it, and send it to our WhatsApp:
+                                <span className="font-semibold text-green-600"> 9032952244</span>
+                            </p>
+                            <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
+                                <Link
+                                    href="/images/Application Form.pdf"
+                                    download
+                                    className="inline-block bg-purple-600 text-white text-sm px-4 py-2 rounded-full shadow hover:bg-purple-700 transition"
+                                >
+                                    📄 Download Booking Form
+                                </Link>
+                                <Link
+                                    href="https://wa.me/919032952244"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-1.5 rounded-full shadow"
+                                >
+                                    Send Screenshot
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Middle Column – 1 col */}
+                    <div className="lg:col-span-2 flex md:flex-col gap-4 items-center pt-6">
+                        {socialLinks.map(({ name, href, icon, bg }) => (
+                            <Link
+                                key={name}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`w-10 h-10 rounded-full ${bg} text-white flex items-center justify-center shadow hover:scale-110 transition`}
+                            >
+                                <Icon icon={icon} className="text-lg" />
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Right Column – 5 cols */}
+                    <div className="lg:col-span-4 flex justify-center items-center">
+                        <div>
+                            <Image
+                                src="/images/layout.jpg"
+                                alt="Fair Layout"
+                                width={350}
+                                height={350}
+                                className="rounded-xl shadow-lg object-cover"
+                            />
+                            <p className='text-lg font-semibold text-center'>The layout can be changed.</p>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Centered Grid Content */}
@@ -230,61 +278,29 @@ const Contact = () => {
                     </motion.div>
 
                     {/* Right - Info */}
-                    <motion.div variants={fadeUp} className="flex flex-col justify-between space-y-4">
-                        <div>
-                            <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-2">
-                                Kids Funland Fair
-                            </h1>
-                            <p className="text-gray-700 text-sm mb-3">
-                                {` A world of excitement! Fun rides, creative games, treats, and laughter await in Vijayawada’s favorite summer event!`}
-                            </p>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={fadeUp}
+                    >
+                        <h2 className='text-xl md:text-2xl uppercase mb-2 text-purple-900 font-bold'>Why Vijayawada?</h2>
+                        <p className='mb-2 text-gray-700 text-sm'>
+                            {` Vijayawada is known for its rich culture, historical significance, and thriving community spirit.
+                        Hosting the Kid's Funland Fair in this vibrant city allows us to bring joy and fun to thousands of families.`}
+                        </p>
 
-                            <div className="grid grid-cols-3 gap-2 text-center text-xs font-semibold">
-                                <div className="bg-green-100 p-3 rounded-lg">Small<br />₹18K + GST</div>
-                                <div className="bg-yellow-100 p-3 rounded-lg">Medium<br />₹28K + GST</div>
-                                <div className="bg-blue-100 p-3 rounded-lg">Big<br />₹32K + GST</div>
-                            </div>
-                        </div>
-
-                        {/* Download Form Section */}
-                        <div className="mt-4 space-y-2">
-                            <p className="text-sm text-gray-800">
-                                Want to book a stall? Download the form, fill it, and send it to our WhatsApp:
-                                <span className="font-semibold text-green-600"> 9032952244</span>
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <Link
-                                    href="/images/Application Form.pdf"
-                                    download
-                                    className="inline-block bg-purple-600 text-white text-sm px-4 py-2 rounded-full shadow hover:bg-purple-700 transition"
-                                >
-                                    📄 Download Booking Form
-                                </Link>
-                                <Link
-                                    href="https://wa.me/919032952244"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-1.5 rounded-full shadow"
-                                >
-                                    Send Screen Shot
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Social Icons */}
-                        <div className="flex gap-3 mt-4">
-                            {socialLinks.map(({ name, href, icon, bg }) => (
-                                <Link
-                                    key={name}
-                                    href={href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`w-9 h-9 rounded-full ${bg} text-white flex items-center justify-center shadow hover:scale-110 transition`}
-                                >
-                                    <Icon icon={icon} className="text-lg" />
-                                </Link>
-                            ))}
-                        </div>
+                        <h2 className='text-xl md:text-2xl uppercase mb-2 text-purple-900 font-bold'>Why Kids Funfair</h2>
+                        <p className='mb-2 text-gray-700 text-sm'>
+                            {` Kids Funland Fair - The Ultimate Summer Fun! Step into a world of excitement at Kids Funland Fair -
+                        the must-visit event of the season! Packed with thrilling games, fun rides, creative activities,
+                        and delicious food, it's the perfect place for kids to laugh, play, and explore.`}
+                        </p>
+                        <p className='text-gray-700 text-sm'>
+                            {` From bouncy castles and face painting to yummy treats and cool prizes, every corner is bursting with joy.
+                        Safe, vibrant, and full of surprises - it's a summer adventure your kids will never forget!
+                        Don't miss out - Funland is where the magic happens!`}
+                        </p>
                     </motion.div>
                 </motion.div>
             </div>

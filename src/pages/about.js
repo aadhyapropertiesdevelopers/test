@@ -3,9 +3,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Icon } from '@iconify/react';
 import {
     Baby,
+    BabyIcon,
     BookOpenText,
     Clapperboard,
     FerrisWheel,
+    Music,
     ShoppingBag,
     Sparkles,
     Star,
@@ -29,8 +31,8 @@ const About = () => {
             color: "bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white"
         },
         {
-            icon: <Clapperboard className="w-6 h-6 text-white" />,
-            text: "Live Shows",
+            icon: <BabyIcon className="w-6 h-6 text-white" />,
+            text: "Kids Fashion Show",
             color: "bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white"
         },
         {
@@ -49,14 +51,14 @@ const About = () => {
             color: "bg-gradient-to-br from-yellow-800 via-yellow-700 to-yellow-600 text-white"
         },
         {
-            icon: <Baby className="w-6 h-6 text-white" />,
-            text: "Toddler Zone",
+            icon: <Music className="w-6 h-6 text-white" />,
+            text: "Music",
             color: "bg-gradient-to-br from-pink-900 via-pink-800 to-pink-700 text-white"
         }
     ];
 
     const partners = [
-        // { name: "Kids World", logo: "/images/Partner-01.jpg", url: "#" },
+        { name: "Aconvention", logo: "/images/Partner-04.jpg", url: "https://www.instagram.com/aconventionvja?igsh=bGt3b243MWpqcnlv&utm_source=qr" },
         { name: "Leap Robots", logo: "/images/Partner-02.png", url: "https://leaprobots.com/" },
         { name: "BirthRight", logo: "/images/Partner-03.jpg", url: "https://www.rainbowhospitals.in/" },
         // { name: "KidSafe", logo: "/partner4.png", url: "#" },
@@ -157,7 +159,7 @@ const About = () => {
                 </TabsList>
 
                 <TabsContent value="about">
-                    <div className="bg-white/20 p-8 max-h-96 overflow-auto rounded-2xl shadow-sm border border-gray-100 space-y-10">
+                    <div className="bg-white/60 p-8 max-h-96 overflow-auto rounded-2xl shadow-sm border border-gray-100 space-y-10">
                         <div>
                             <h2 className="text-3xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
                                 <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-full">
@@ -229,48 +231,12 @@ const About = () => {
                             <p className="text-base mt-4">
                                 {`  Whether you're a parent looking for the perfect weekend escape or a brand wanting to connect with thousands of families, <strong>Kids Funland Fair</strong> is “the fair of a lifetime” you won't want to miss.`}
                             </p>
-
-                            <div className="space-y-1 text-sm md:text-base font-medium mt-4">
-                                <p className="flex items-center gap-2">
-                                    <div className="bg-gradient-to-r from-blue-500 to-cyan-600 p-2 rounded-full">
-                                        <Icon icon="mdi:map-marker" className="text-white w-5 h-5" />
-                                    </div>
-                                    <Link href="https://www.google.com/maps/search/?q=A%C2%2FC+Convention+Centre%2C+Benz+Circle%2C+Vijayawada" passHref>
-                                        <span className="hover:underline cursor-pointer">Venue: A/C Convention Centre, Benz Circle, Vijayawada</span>
-                                    </Link>
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <div className="bg-gradient-to-r from-purple-600 to-indigo-500 p-2 rounded-full">
-                                        <Icon icon="mdi:calendar-range" className="text-white w-5 h-5" />
-                                    </div>
-                                    <span>Dates: May 31 & June 1, 2025</span>
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <div className="bg-gradient-to-r from-green-600 to-lime-500 p-2 rounded-full">
-                                        <Icon icon="mdi:phone" className="text-white w-5 h-5" />
-                                    </div>
-                                    <Link href="tel:+919701352244">
-                                        <span className="hover:underline cursor-pointer">Contact: 97013 52244</span>
-                                    </Link> /
-                                    <Link href="tel:+919032952244">
-                                        <span className="hover:underline cursor-pointer"> 90329 52244</span>
-                                    </Link>
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-full">
-                                        <Icon icon="mdi:web" className="text-white w-5 h-5" />
-                                    </div>
-                                    <Link href="mailto:info@globalgrandeurevents.com">
-                                        <span className="hover:underline cursor-pointer">Email: info@globalgrandeurevents.com</span>
-                                    </Link>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </TabsContent>
 
                 <TabsContent value="vision">
-                    <div className="bg-white/20 p-8 rounded-2xl shadow-sm border border-gray-100 space-y-10">
+                    <div className="bg-white/60 p-8 rounded-2xl shadow-sm border border-gray-100 space-y-10">
                         <div>
                             <h2 className="text-3xl font-semibold text-gray-800 mb-6 flex items-center gap-3">
                                 <div className="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center">
@@ -293,13 +259,18 @@ const About = () => {
 
                 <TabsContent value="highlights">
                     <div className="bg-white/20 p-8 rounded-2xl shadow-sm border border-gray-100">
-                        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Park Highlights</h2>
+                        <div className='flex justify-between items-center mb-6'>
+                            <h2 className="text-3xl font-semibold text-gray-800">Park Highlights</h2>
+                            <h2 className="text-3xl font-semibold text-gray-800">Certificates for volunteers</h2>
+                        </div>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             {highlights.map((item, idx) => (
-                                <div key={idx} className={`${item.color} p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col items-center`}>
-                                    <div className="mb-2">{item.icon}</div>
-                                    <p className="font-medium text-lg text-center">{item.text}</p>
-                                </div>
+                                <Link href='/schedule' passHref key={idx}>
+                                    <div className={`${item.color} p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col items-center`}>
+                                        <div className="mb-2">{item.icon}</div>
+                                        <p className="font-medium text-lg text-center">{item.text}</p>
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -345,7 +316,10 @@ const About = () => {
                                                 review && (
                                                     <div key={idx} className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-80">
                                                         <div className="flex items-center gap-4 mb-4">
-                                                            <Image src={review.img} alt={review.name} width={100} height={100} className="w-10 h-10 rounded-full" />
+                                                            {/* <Image src={review.img} alt={review.name} width={100} height={100} className="w-10 h-10 rounded-full" /> */}
+                                                            <div className="w-10 h-10 bg-purple-600 text-white flex items-center justify-center text-md font-bold rounded-full shadow-md">
+                                                                {review.name.charAt(0)}
+                                                            </div>
                                                             <div>
                                                                 <h4 className="font-semibold text-gray-800">
                                                                     {review.name}
