@@ -219,7 +219,7 @@ const HomeBanner = () => {
         <div className="absolute w-20 h-20 bg-blue-200 rounded-full top-1/2 left-1/3 blur-lg opacity-50 animate-wiggle"></div>
 
         <motion.div
-          className="flex-grow flex justify-center md:justify-start items-center px-6 md:px-12 py-12"
+          className="flex-grow flex justify-center md:justify-start items-center px-6 md:px-12 py-24 md:py-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -310,7 +310,7 @@ const HomeBanner = () => {
               </div>
             </div>
 
-            <motion.div className=""
+            <motion.div className="bg-white/40 p-4 md:bg-transparent"
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}

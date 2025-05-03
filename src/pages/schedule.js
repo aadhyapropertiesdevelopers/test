@@ -253,7 +253,7 @@ const KidsFunFestivalSchedule = () => {
     ];
 
     return (
-        <div className="relative h-screen justify-center overflow-hidden bg-gradient-to-b from-green-200 to-green-100 p-4 font-sans flex flex-col">
+        <div className="relative h-screen xs:py-16 md:py-2 justify-center overflow-hidden bg-gradient-to-b from-green-200 to-green-100 p-4 font-sans flex flex-col">
             {/* Clouds in background */}
             {clouds.map((cloud) => (
                 <div

@@ -101,7 +101,7 @@ const About = () => {
 
 
     return (
-        <div className="min-h-screen bg-cover bg-center bg-black/10 bg-blend-overlay p-6 md:p-10 flex items-center justify-center flex-col bg-[url('/images/aboutbglg.png')]">
+        <div className="min-h-screen bg-cover bg-center bg-black/10 bg-blend-overlay py-24 px-6 md:py-10 flex items-center justify-center flex-col bg-[url('/images/aboutbglg.png')]">
             <header className="text-center mb-10">
                 <div className="inline-flex items-center justify-center mb-4">
                     <Sparkles className="text-pink-400 mr-2" />
