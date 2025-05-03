@@ -56,10 +56,10 @@ const About = () => {
     ];
 
     const partners = [
-        { name: "Kids World", logo: "/images/Partner-01.jpg", url: "#" },
-        { name: "Convention Center", logo: "/images/Partner-02.jpg", url: "#" },
-        { name: "BirthRight", logo: "/images/Partner-03.jpg", url: "#" },
-        { name: "KidSafe", logo: "/partner4.png", url: "#" },
+        // { name: "Kids World", logo: "/images/Partner-01.jpg", url: "#" },
+        { name: "Leap Robots", logo: "/images/Partner-02.png", url: "https://leaprobots.com/" },
+        { name: "BirthRight", logo: "/images/Partner-03.jpg", url: "https://www.rainbowhospitals.in/" },
+        // { name: "KidSafe", logo: "/partner4.png", url: "#" },
     ];
     const reviews = [
         {
@@ -108,7 +108,7 @@ const About = () => {
                     <span className="text-sm font-medium text-pink-600">Fun for the whole family</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500 uppercase">global grandeur events</span>
+                    Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500 uppercase">Kids Funland Fair</span>
                 </h1>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                     Where magical moments and unforgettable memories are created for families of all ages
@@ -116,8 +116,14 @@ const About = () => {
             </header>
 
             {/* Tabs */}
-            <Tabs defaultValue="about" className="max-w-6xl mx-auto w-full space-y-6">
+            <Tabs defaultValue="highlights" className="max-w-6xl mx-auto w-full space-y-6">
                 <TabsList className="flex justify-center h-32 md:h-16 flex-wrap gap-2 mb-6 bg-gradient-to-r from-transparent via-white/30 to-transparent p-2 rounded-xl">
+                    <TabsTrigger
+                        value="highlights"
+                        className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white px-4 py-2 rounded-lg transition-all text-gray-700 hover:bg-gray-200"
+                    >
+                        Highlights
+                    </TabsTrigger>
                     <TabsTrigger
                         value="about"
                         className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white px-4 py-2 rounded-lg transition-all text-gray-700 hover:bg-gray-200"
@@ -129,12 +135,6 @@ const About = () => {
                         className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white px-4 py-2 rounded-lg transition-all text-gray-700 hover:bg-gray-200"
                     >
                         Our Vision
-                    </TabsTrigger>
-                    <TabsTrigger
-                        value="highlights"
-                        className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white px-4 py-2 rounded-lg transition-all text-gray-700 hover:bg-gray-200"
-                    >
-                        Highlights
                     </TabsTrigger>
                     <TabsTrigger
                         value="team"
@@ -283,7 +283,7 @@ const About = () => {
                                 Be it a grand wedding, large scale exhibition or a corporate event. Turning your vision into reality, we will
                                 exceed all your expectations. With a wealth of experience behind us, we combine our passion and expertise to deliver
                                 a world class service to our clients. From intimate gatherings to private events, we aim to create a unique and
-                                memorable experience for every individual. If you are thinking about hosting an event, Kids Funland Fair is here to
+                                memorable experience for every individual. If you are thinking about hosting an event, Global Grandeur Events is here to
                                 offer you premium services that take your event to a whole new level.
                             </p>
                         </div>
@@ -330,7 +330,6 @@ const About = () => {
                             ))}
                         </Marquee>
                     </div>
-
                 </TabsContent>
 
                 <TabsContent value="reviews">
@@ -375,25 +374,21 @@ const About = () => {
                         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Valued Partners</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                             {partners.map((partner, index) => (
-                                <Link
-                                    key={index}
-                                    href={partner.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group flex flex-col items-center"
-                                >
-                                    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-32 flex items-center justify-center border">
-                                        <Image
-                                            src={partner.logo}
-                                            alt={partner.name}
-                                            width={400}
-                                            height={400}
-                                            className="h-auto w-full object-contain opacity-80 group-hover:opacity-100"
-                                        />
+                                <Link href={partner.url} passHref target='_blank'>
+                                    <div className="group flex flex-col items-center">
+                                        <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md w-full h-32 flex items-center justify-center border">
+                                            <Image
+                                                src={partner.logo}
+                                                alt={partner.name}
+                                                width={400}
+                                                height={400}
+                                                className="h-auto w-full object-contain opacity-80 group-hover:opacity-100"
+                                            />
+                                        </div>
+                                        <p className="text-center text-lg text-gray-900 mt-2 group-hover:text-indigo-700">
+                                            {partner.name}
+                                        </p>
                                     </div>
-                                    <p className="text-center text-lg text-gray-900 mt-2 group-hover:text-indigo-700">
-                                        {partner.name}
-                                    </p>
                                 </Link>
                             ))}
                         </div>

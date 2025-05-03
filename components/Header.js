@@ -114,6 +114,14 @@ const Header = () => {
         <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:bg-transparent bg-white/95">
             <div className="flex justify-between items-center">
                 {/* Left side: Mobile Toggle + Navigation */}
+                <div className="hidden md:flex items-center gap-4">
+                    <Link href="/" className="group">
+                        <Image src='/images/Global.png' width={400} height={400} alt='Logo' className='w-20 h-auto rounded-md' />
+                    </Link>
+                </div>
+
+
+                {/* Right side: Logos - Hidden on mobile */}
                 <div className="flex items-center gap-4">
                     {/* Mobile Menu Toggle */}
                     <button
@@ -146,16 +154,6 @@ const Header = () => {
                             );
                         })}
                     </nav>
-                </div>
-
-                {/* Right side: Logos - Hidden on mobile */}
-                <div className="hidden md:flex items-center gap-4">
-                    <Link href="/" className="group">
-                        <Image src='/images/Fuland.png' width={400} height={400} alt='Logo' className='w-20 h-auto' />
-                    </Link>
-                    <Link href="/" className="group">
-                        <Image src='/images/Global.png' width={400} height={400} alt='Logo' className='w-20 h-auto' />
-                    </Link>
                 </div>
             </div>
 
