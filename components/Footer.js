@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 
 const Footer = () => {
     return (
-        <footer className="fixed bottom-0 left-0 right-0 z-50 bg-green-900/50 py-4 px-6 text-sm text-white flex flex-col md:flex-row justify-between items-center gap-4">
+        <footer className="md:fixed md:bottom-0 md:left-0 md:right-0 z-50 md:bg-green-900/50 bg-green-800 py-4 px-6 text-sm text-white flex flex-row justify-between items-center gap-4">
             {/* Left Side - Copyright */}
             <p className="text-xs md:text-sm">© {new Date().getFullYear()} Kids Funland Fair. All rights reserved.</p>
 
