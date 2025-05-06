@@ -66,7 +66,7 @@ const About = () => {
         { name: "Aconvention", logo: "/images/Partner-04.jpg", url: "https://www.instagram.com/aconventionvja?igsh=bGt3b243MWpqcnlv&utm_source=qr" },
         { name: "Pizza Hut", logo: "/images/Partner-07.png", url: "" },
         { name: "", logo: "/images/Partner-09.png", url: "" },
-        // { name: "", logo: "/images/Partner-04.jpg", url: "" },
+        { name: "Eduino Robots", logo: "/images/Partner-08.jpg", url: "" },
     ];
     const reviews = [
         {
@@ -356,7 +356,7 @@ const About = () => {
                 <TabsContent value="partners">
                     <div className="bg-white/20 p-6 rounded-2xl border border-gray-200">
                         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Valued Partners</h2>
-                        <Marquee pauseOnHover className="[--duration:40s] gap-6">
+                        <Marquee pauseOnHover className="[--duration:20s] gap-6">
                             {partners.map((partner, index) => (
                                 <Card key={index} className="w-60 p-4 shadow-none">
                                     <Link href={partner.url} passHref target='_blank'>
