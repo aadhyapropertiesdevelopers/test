@@ -212,7 +212,7 @@ const HomeBanner = () => {
       <div className="absolute w-32 h-32 bg-pink-300 rounded-full bottom-10 right-10 blur-xl opacity-60 animate-pulse"></div>
       <div className="absolute w-20 h-20 bg-blue-200 rounded-full top-1/2 left-1/3 blur-lg opacity-50 animate-wiggle"></div>
 
-      <div className="flex-grow flex justify-center md:justify-start items-center px-6 md:px-12 py-24 md:py-12">
+      <div className="flex-grow mb-72 md:mb-0 flex justify-center md:justify-start items-center px-6 md:px-12 py-24 md:py-12">
         <div className="max-w-4xl gap-6  flex flex-col md:flex-row justify-between items-center">
           {/* Left Section */}
           <div>
@@ -280,7 +280,7 @@ const HomeBanner = () => {
                 <h3 className="font-semibold text-xl text-purple-700 mb-2">Event Starts In:</h3>
                 <Link href="/schedule" target="_blank">
                   <div className="flex items-center cursor-pointer text-purple-600 hover:text-purple-700 transition">
-                    <span className="text-lg bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-md font-semibold text-white">Program Schedule</span>
+                    <span className="text-lg bg-emerald-900 hover:bg-emerald-950 px-2 py-1 rounded-md font-semibold text-white">Program Schedule</span>
                   </div>
                 </Link>
               </div>

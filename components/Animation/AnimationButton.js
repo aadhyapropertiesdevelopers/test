@@ -34,7 +34,7 @@ const AnimationButton = ({ buttonText }) => {
 
         // ⏳ Wait 5 seconds, then open the URL in a new tab
         setTimeout(() => {
-            window.open("https://www.jotform.com/build/251065072068453?s=templates", "_blank");
+            window.open("https://forms.gle/7nsaHZqLonaPBG7V7", "_blank");
         }, 3000);
     };
 

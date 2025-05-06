@@ -1,4 +1,5 @@
 import { Marquee } from '@/components/magicui/marquee';
+import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Icon } from '@iconify/react';
 import {
@@ -58,10 +59,14 @@ const About = () => {
     ];
 
     const partners = [
-        { name: "Aconvention", logo: "/images/Partner-04.jpg", url: "https://www.instagram.com/aconventionvja?igsh=bGt3b243MWpqcnlv&utm_source=qr" },
+        { name: "Decathlon", logo: "/images/Partner-05.png", url: "https://www.decathlon.in/" },
         { name: "Leap Robots", logo: "/images/Partner-02.png", url: "https://leaprobots.com/" },
         { name: "BirthRight", logo: "/images/Partner-03.jpg", url: "https://www.rainbowhospitals.in/" },
-        // { name: "KidSafe", logo: "/partner4.png", url: "#" },
+        { name: "UK World", logo: "/images/Partner-06.jpg", url: "https://www.instagram.com/reel/CvSuKkkA5wY/?igsh=MXQ1YTVlcmhrOGk0OQ==" },
+        { name: "Aconvention", logo: "/images/Partner-04.jpg", url: "https://www.instagram.com/aconventionvja?igsh=bGt3b243MWpqcnlv&utm_source=qr" },
+        { name: "Pizza Hut", logo: "/images/Partner-07.png", url: "" },
+        { name: "", logo: "/images/Partner-09.png", url: "" },
+        // { name: "", logo: "/images/Partner-04.jpg", url: "" },
     ];
     const reviews = [
         {
@@ -259,10 +264,15 @@ const About = () => {
 
                 <TabsContent value="highlights">
                     <div className="bg-white/20 p-8 rounded-2xl shadow-sm border border-gray-100">
-                        <div className='flex justify-between items-center mb-6'>
-                            <h2 className="text-3xl font-semibold text-gray-800">Park Highlights</h2>
-                            <h2 className="text-3xl font-semibold text-gray-800">Certificates for volunteers</h2>
+                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 mb-6">
+                            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+                                Park Highlights
+                            </h2>
+                            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+                                Certificates for volunteers
+                            </h2>
                         </div>
+
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             {highlights.map((item, idx) => (
                                 <Link href='/schedule' passHref key={idx}>
@@ -346,7 +356,29 @@ const About = () => {
                 <TabsContent value="partners">
                     <div className="bg-white/20 p-6 rounded-2xl border border-gray-200">
                         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Valued Partners</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <Marquee pauseOnHover className="[--duration:40s] gap-6">
+                            {partners.map((partner, index) => (
+                                <Card key={index} className="w-60 p-4 shadow-none">
+                                    <Link href={partner.url} passHref target='_blank'>
+                                        <div className="group flex flex-col items-center">
+                                            <div className="bg-white w-full h-36 flex items-center justify-center border">
+                                                <Image
+                                                    src={partner.logo}
+                                                    alt={partner.name}
+                                                    width={400}
+                                                    height={400}
+                                                    className="h-auto w-full object-contain opacity-80 group-hover:opacity-100"
+                                                />
+                                            </div>
+                                            <p className="text-center text-lg text-gray-900 mt-2 group-hover:text-indigo-700">
+                                                {partner.name}
+                                            </p>
+                                        </div>
+                                    </Link>
+                                </Card>
+                            ))}
+                        </Marquee>
+                        {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
                             {partners.map((partner, index) => (
                                 <Link key={index} href={partner.url} passHref target='_blank'>
                                     <div className="group flex flex-col items-center">
@@ -365,10 +397,9 @@ const About = () => {
                                     </div>
                                 </Link>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </TabsContent>
-
             </Tabs>
         </div>
     );

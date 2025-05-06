@@ -174,8 +174,8 @@ const fadeUp = {
 };
 
 const socialLinks = [
-    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61575017804597', icon: 'ic:baseline-facebook', bg: 'bg-[#1877F2]' },
-    { name: 'Instagram', href: 'https://www.instagram.com/kidsfunlandfair', icon: 'mdi:instagram', bg: 'bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600' },
+    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61575017804597', icon: 'line-md:facebook', bg: 'bg-[#1877F2]' },
+    { name: 'Instagram', href: 'https://www.instagram.com/kidsfunlandfair', icon: 'line-md:instagram', bg: 'bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600' },
     { name: 'WhatsApp', href: 'https://wa.me/919032952244', icon: 'ic:baseline-whatsapp', bg: 'bg-green-600' },
     { name: 'YouTube', href: 'https://youtube.com/@globalgrandeurevents', icon: 'line-md:youtube', bg: 'bg-red-600' },
     { name: 'Address', href: 'https://g.co/kgs/5nH75ib', icon: 'mdi:map-marker', bg: 'bg-gray-800' },
@@ -199,9 +199,24 @@ const Contact = () => {
                         </p>
 
                         <div className="grid grid-cols-3 gap-2 text-center text-xs font-semibold">
-                            <div className="bg-green-100 p-3 rounded-lg">Small<br />₹18K + GST</div>
-                            <div className="bg-yellow-100 p-3 rounded-lg">Medium<br />₹28K + GST</div>
-                            <div className="bg-blue-100 p-3 rounded-lg">Big<br />₹32K + GST</div>
+                            <Link
+                                href="/images/Application_Form.pdf"
+                                download
+                            >
+                                <div className="bg-green-100 p-3 rounded-lg">Small<br />₹18K + GST</div>
+                            </Link>
+                            <Link
+                                href="/images/Application_Form.pdf"
+                                download
+                            >
+                                <div className="bg-yellow-100 p-3 rounded-lg">Medium<br />₹28K + GST</div>
+                            </Link>
+                            <Link
+                                href="/images/Application_Form.pdf"
+                                download
+                            >
+                                <div className="bg-blue-100 p-3 rounded-lg">Big<br />₹32K + GST</div>
+                            </Link>
                         </div>
 
                         <div className="mt-4 space-y-2">
@@ -211,7 +226,7 @@ const Contact = () => {
                             </p>
                             <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
                                 <Link
-                                    href="/images/Application Form.pdf"
+                                    href="/images/Application_Form.pdf"
                                     download
                                     className="inline-block bg-purple-600 text-white text-sm px-4 py-2 rounded-full shadow hover:bg-purple-700 transition"
                                 >
@@ -248,7 +263,7 @@ const Contact = () => {
                     <div className="lg:col-span-4 flex justify-center items-center">
                         <div>
                             <Image
-                                src="/images/layout.jpg"
+                                src="/images/layout00.jpg"
                                 alt="Fair Layout"
                                 width={350}
                                 height={350}

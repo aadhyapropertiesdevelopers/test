@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ChevronLeft, ChevronRight, Music, PenTool, Wand2, Theater, Users, Gamepad, ShoppingBag, Award } from 'lucide-react';
+import AnimationButton from '../../components/Animation/AnimationButton';
 
 // Event data
 const eventsDay1 = [
@@ -152,14 +153,6 @@ const KidsFunFestivalSchedule = () => {
                     </div>
                 </div>
 
-                <div className='absolute left-0'>
-                    <div className="w-36 h-36 bg-red-500 rounded-full shadow-xl border-2 border-dashed text-white border-white flex flex-col justify-center items-center text-center p-4">
-                        <h3 className="font-bold text-xl">application</h3>
-                        {/* <p className='font-bold text-4xl'>299</p>
-                        <h3 className='font-bold'>Kids</h3> */}
-                    </div>
-                </div>
-
                 <div className="text-center mb-4">
                     <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-1">
                         <span className="text-yellow-300">★</span>
@@ -235,6 +228,12 @@ const KidsFunFestivalSchedule = () => {
                             );
                         })}
                     </div>
+                    <div className='mt-2'>
+                        <AnimationButton
+                            buttonText="  Application Form"
+                            className="bg-gradient-to-r from-pink-400 via-yellow-300 to-teal-400 text-white rounded-full shadow-lg hover:scale-105 transition"
+                        />
+                    </div>
                 </div>
 
                 {/* Mascot */}
@@ -242,9 +241,6 @@ const KidsFunFestivalSchedule = () => {
                     <div className="relative">
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-bounce">
                             <div className="text-4xl">🐼</div>
-                        </div>
-                        <div className="absolute -top-6 left-0 bg-white p-1 rounded-lg shadow-md">
-                            <p className="text-xs font-bold text-purple-600">Join us!</p>
                         </div>
                     </div>
                 </div>
