@@ -110,9 +110,9 @@
 //                       <Icon icon='ic:baseline-whatsapp' className="text-xl text-green-700" />
 //                       +91 8522052424
 //                     </Link>
-//                     <Link href="https://wa.me/919701352244" target="_blank" rel="noopener noreferre" className='flex gap-2 items-center'>
+//                     <Link href="https://wa.me/918522052424" target="_blank" rel="noopener noreferre" className='flex gap-2 items-center'>
 //                       <Icon icon='ic:baseline-whatsapp' className="text-xl text-green-700" />
-//                       +91 9701352244
+//                       +91 8522052424
 //                     </Link>
 //                   </div>
 //                   <Link href='mailto:globalgrandeurevents@gmail.com'
@@ -183,6 +183,7 @@ const HomeBanner = () => {
   };
 
   useEffect(() => {
+    // Using a placeholder future date for countdown
     const eventDate = new Date('2025-05-31T00:00:00').getTime();
 
     const updateTimer = () => {
@@ -219,9 +220,8 @@ const HomeBanner = () => {
             <p className="text-4xl mb-2 uppercase font-bold bg-gradient-to-r from-pink-800 via-indigo-600 to-teal-900 text-transparent bg-clip-text">
               Vijayawada's ultimate family entertainment
             </p>
-            <p className="text-4xl text-orange-600 uppercase font-bold">
-              May 31<sup className="text-sm align-super">st</sup> - June 1<sup className="text-sm align-super">st</sup>,
-              <span className="text-3xl font-bold ml-2">2025</span>
+            <p className="text-xl text-orange-600 uppercase font-bold">
+              <span className="text-2xl font-bold">Coming Soon in Vijayawada</span>
             </p>
 
             <div className="my-4">
@@ -236,10 +236,6 @@ const HomeBanner = () => {
                     <Link href="https://wa.me/918522052424" target="_blank" className="flex items-center gap-2">
                       <Icon icon="ic:baseline-whatsapp" className="text-xl" />
                       +91 8522052424
-                    </Link>
-                    <Link href="https://wa.me/919701352244" target="_blank" className="flex items-center gap-2">
-                      <Icon icon="ic:baseline-whatsapp" className="text-xl" />
-                      +91 9701352244
                     </Link>
                   </div>
 
@@ -277,21 +273,21 @@ const HomeBanner = () => {
             {/* Countdown */}
             <div className="max-w-md mb-8">
               <div className='flex justify-between items-center mb-2'>
-                <h3 className="font-semibold text-xl text-purple-700 mb-2">Event Starts In:</h3>
+                {/* <h3 className="font-semibold text-xl text-purple-700 mb-2">Event Starts In:</h3> */}
                 <Link href="/schedule" target="_blank">
                   <div className="flex items-center cursor-pointer text-purple-600 hover:text-purple-700 transition">
                     <span className="text-lg bg-emerald-900 hover:bg-emerald-950 px-2 py-1 rounded-md font-semibold text-white">Program Schedule</span>
                   </div>
                 </Link>
               </div>
-              <div className="flex gap-1">
+              {/* <div className="flex gap-1">
                 {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, index) => (
                   <div key={label} className="bg-white/70 p-2 rounded-2xl text-center border-2 border-dashed border-pink-300 shadow-lg">
                     <div className="text-2xl font-extrabold text-purple-700">{Object.values(timeLeft)[index]}</div>
                     <div className="text-sm text-slate-700">{label}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -380,9 +376,9 @@ export default HomeBanner;
 //                         <Icon icon="ic:baseline-whatsapp" className="text-xl" />
 //                         +91 8522052424
 //                       </Link>
-//                       <Link href="https://wa.me/919701352244" target="_blank" className="flex items-center gap-2">
+//                       <Link href="https://wa.me/918522052424" target="_blank" className="flex items-center gap-2">
 //                         <Icon icon="ic:baseline-whatsapp" className="text-xl" />
-//                         +91 9701352244
+//                         +91 8522052424
 //                       </Link>
 //                     </div>
 //                     <Link href="mailto:globalgrandeurevents@gmail.com" className="text-red-500 font-bold block mt-1">globalgrandeurevents@gmail.com</Link>
@@ -497,7 +493,7 @@ export default HomeBanner;
 //   },
 //   {
 //     name: 'WhatsApp',
-//     href: 'https://wa.me/919701352244',
+//     href: 'https://wa.me/918522052424',
 //     icon: 'ic:baseline-whatsapp',
 //     bg: 'bg-[#25D366]',
 //     hover: 'hover:bg-[#20ba5a]',
@@ -604,7 +600,7 @@ export default HomeBanner;
 //                     </Link>
 //                     <Link href="https://wa.me/919701352244" target="_blank" className="flex items-center gap-2">
 //                       <Icon icon="ic:baseline-whatsapp" className="text-xl" />
-//                       +91 9701352244
+//                       +91 8522052424
 //                     </Link>
 //                   </div>
 //                   <Link href="mailto:globalgrandeurevents@gmail.com" className="text-red-500 font-bold block mt-1">globalgrandeurevents@gmail.com</Link>
@@ -682,7 +678,7 @@ export default HomeBanner;
 //   },
 //   {
 //     name: 'WhatsApp',
-//     href: 'https://wa.me/919701352244',
+//     href: 'https://wa.me/918522052424',
 //     icon: 'ic:baseline-whatsapp',
 //     bg: 'bg-[#25D366]',
 //     hover: 'hover:bg-[#20ba5a]',

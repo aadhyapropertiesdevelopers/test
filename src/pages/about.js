@@ -3,10 +3,8 @@ import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Icon } from '@iconify/react';
 import {
-    Baby,
     BabyIcon,
     BookOpenText,
-    Clapperboard,
     FerrisWheel,
     Music,
     ShoppingBag,
@@ -23,7 +21,7 @@ const About = () => {
         { name: "Shivani Raj", role: "COO", img: "/images/02.png" },
         { name: "Tanishka Raj", role: "Executive Director", img: "/images/03.png" },
         { name: "Vivek Kumar", role: "Director", img: "/images/04.png" },
-        { name: " Uday Kumar Y", role: "Head Marcom", img: "/images/05.png" },
+        { name: "Uday Kumar Y", role: "Head Marcom", img: "/images/05.png" },
     ];
     const highlights = [
         {
@@ -186,7 +184,7 @@ const About = () => {
                                 <p className="font-semibold text-lg">Kids Funland Fair – Where Magic Meets Memories!</p>
                             </div>
                             <p className="text-base">
-                                Step into Vijayawada’s most awaited family extravaganza – the Kids Funland Fair! Organized by Global Grandeur Events, this two-day carnival on <strong>May 31 & June 1, 2025</strong>, promises non-stop joy, laughter, and unforgettable experiences for kids and families alike.
+                                Step into Vijayawada’s most awaited family extravaganza – the Kids Funland Fair! Organized by Global Grandeur Events, this two-day carnival <strong>coming soon in Vijayawada</strong>, promises non-stop joy, laughter, and unforgettable experiences for kids and families alike.
                             </p>
                             <p className="text-base">
                                 From thrilling games and colorful entertainment zones to live music, delicious food stalls, pet shows, and ramp walks – the fair is designed to be a vibrant mix of fun, learning, and celebration.
@@ -250,10 +248,10 @@ const About = () => {
                                 Our Vision
                             </h2>
                             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-h-40 md:max-h-none overflow-y-auto">
-                                ...an event management company with an exclusive understanding of how an event is organised and executed;
-                                Be it a grand wedding, large scale exhibition or a corporate event. Turning your vision into reality, we will
+                                Global Grandeur Events is an event management company with an exclusive understanding of how an event is organized and executed.
+                                Be it a grand wedding, large-scale exhibition, or a corporate event, we turn your vision into reality and
                                 exceed all your expectations. With a wealth of experience behind us, we combine our passion and expertise to deliver
-                                a world class service to our clients. From intimate gatherings to private events, we aim to create a unique and
+                                a world-class service to our clients. From intimate gatherings to private events, we aim to create a unique and
                                 memorable experience for every individual. If you are thinking about hosting an event, Global Grandeur Events is here to
                                 offer you premium services that take your event to a whole new level.
                             </p>
@@ -292,20 +290,11 @@ const About = () => {
                             {teamMembers.map((member, idx) => (
                                 <div
                                     key={idx}
-                                    className=" rounded-xl overflow-hidden shadow-sm hover:shadow-md border w-64 mx-2"
+                                    className="rounded-xl shadow-sm hover:shadow-md border bg-white/80 w-64 mx-2 p-6"
                                 >
-                                    <div className="relative h-72 text-white hover:text-gray-400">
-                                        {/* Gradient overlay and text */}
-                                        {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-white/50 hover:to-purple-400"></div> */}
-
-                                        {/* Image */}
-                                        <Image src={member.img} alt={member.name} width={200} height={200} className="w-full h-full  object-cover" />
-
-                                        {/* Text on image */}
-                                        <div className="absolute bottom-0 left-0 right-0 z-20 text-center px-4 bg-black/60 p-2 m-2 rounded-lg">
-                                            <h3 className="text-lg font-semibold uppercase">{member.name}</h3>
-                                            <p className="text-sm font-semibold">{member.role}</p>
-                                        </div>
+                                    <div className="text-center">
+                                        <h3 className="text-xl font-bold text-purple-800 uppercase mb-2">{member.name}</h3>
+                                        <p className="text-md font-medium text-gray-700">{member.role}</p>
                                     </div>
                                 </div>
                             ))}
